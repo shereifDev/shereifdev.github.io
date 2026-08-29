@@ -1,17 +1,16 @@
 github_users:
   - shereifDev
-  
 
 repo_description_lines_max: 2
 
 github_repos:
-  - PCB-Design
-  - Embedded-Linux-Journey
-  - IEEE_azhar_DOCs
-  - NTI_IoT_Graduation_Project
-  - ARM_cortex-microcontroller
-  - AVR-microcontroller
-  - PIC-microcontroller 
-  - C-lang
-  - exercism_bash_track
-  - exercism-python-track
+  - shereifDev/PCB-Design
+  - shereifDev/Embedded-Linux-Journey
+  - shereifDev/IEEE_azhar_DOCs
+  - shereifDev/NTI_IoT_Graduation_Project
+  - shereifDev/ARM_cortex-microcontroller
+  - shereifDev/AVR-microcontroller
+  - shereifDev/PIC-microcontroller
+  - shereifDev/C-lang
+  - shereifDev/exercism_bash_track
+  - shereifDev/exercism-python-track
