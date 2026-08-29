@@ -33,13 +33,13 @@ cv:
         area: Electronics & Communications Engineering
         studyType: Bachelor
         start_date: ""
-        end_date: "2027"
+        end_date: 2027
         score: ""
         courses: ""
         highlights:
           - "Relevant Coursework: Microprocessors, Embedded Systems, Logic Design, C++ Programming."
 
-    Technical Skills:
+    Skills:
       - name: Languages
         level: ""
         icon: fa-solid fa-code
@@ -104,7 +104,7 @@ cv:
         start_date: ""
         end_date: ""
 
-    Experience & Volunteering:
+    Experience:
       - company: SyntaxIoT
         position: IoT Engineering Intern
         location: Online / On-site
@@ -139,6 +139,7 @@ cv:
         summary: "Delivered technical sessions on IoT fundamentals and technological development to program participants."
         highlights: []
 
+    Volunteer:
       - company: IEEE Al-Azhar Branch
         position: Embedded Systems Instructor - Code Baker Camp
         location: Online
@@ -171,51 +172,39 @@ cv:
         summary: "Developed foundational programming skills and problem-solving techniques using Python."
         highlights: []
 
-    Trainings:
-      - company: National Telecommunication Institute (NTI)
-        position: IoT Intensive Training Program
-        location: Online
-        start_date: 2026
-        end_date: 2026
-        summary: "Advanced IoT & Protocols: Deep dive into MQTT, system integration, and IoT architectures."
-        highlights:
-          - "Review & Implementation: Comprehensive review of Embedded C, ATmega32 drivers, and hardware interfacing."
+    Certificates:
+      - name: IoT Intensive Training Program
+        date: 2026
+        issuer: National Telecommunication Institute (NTI)
+        icon: fa-solid fa-certificate
+        summary: "Advanced IoT & Protocols: Deep dive into MQTT, system integration, and IoT architectures. Review & Implementation: Comprehensive review of Embedded C, ATmega32 drivers, and hardware interfacing."
           
-      - company: Cisco, Harvard, and Mahara-Tech
-        position: Specialized Technical Courses
-        location: Online
-        start_date: 2025
-        end_date: 2025
-        summary: "Networking Basics (Cisco) | Introduction to IoT (Harvard University) | IoT Fundamentals (Mahara-Tech)."
-        highlights:
-          - "ARM Architecture: Mastered ARM Cortex-M basics."
+      - name: Specialized Technical Courses
+        date: 2025
+        issuer: Cisco, Harvard, and Mahara-Tech
+        icon: fa-solid fa-certificate
+        summary: "Networking Basics (Cisco) | Introduction to IoT (Harvard University) | IoT Fundamentals (Mahara-Tech). ARM Architecture: Mastered ARM Cortex-M basics."
           
-      - company: Eng. Mohamed Zaghloul
-        position: Embedded Systems Diploma (230 Hours)
-        location: Online
-        start_date: 2024
-        end_date: 2024
-        summary: "Microcontroller Interfacing: Developed modular drivers for AVR peripherals."
-        highlights:
-          - "Core Concepts: C/Embedded C, Data Structures, Algorithms, Testing, and Computer Architecture."
-          - "System Design: RTOS, Bootloader basics, and Communication Protocols (USART, SPI, I2C)."
+      - name: Embedded Systems Diploma (230 Hours)
+        date: 2024
+        issuer: Eng. Mohamed Zaghloul
+        icon: fa-solid fa-certificate
+        summary: "Microcontroller Interfacing: Developed modular drivers for AVR peripherals. Core Concepts: C/Embedded C, Data Structures, Algorithms, Testing, and Computer Architecture. System Design: RTOS, Bootloader basics, and Communication Protocols (USART, SPI, I2C)."
 
-    Honors & Achievements:
-      - company: HackerRank
-        position: 5-Star Gold Badge in C Programming
-        location: ""
-        start_date: ""
-        end_date: ""
+    Awards:
+      - title: 5-Star Gold Badge in C Programming
+        authors: []
+        date: ""
+        awarder: HackerRank
+        url: ""
         summary: "Achieved the 5-Star Gold Badge in C Programming."
-        highlights: []
 
-      - company: Self-Learning
-        position: Python (2022) and C++ (2023)
-        location: ""
-        start_date: "2022"
-        end_date: "2023"
-        summary: "Built a solid foundation in Python and C++ through intensive independent study."
-        highlights: []
+      - title: Self-Learning
+        authors: []
+        date: "2022 - 2023"
+        awarder: Independent Study
+        url: ""
+        summary: "Built a solid foundation in Python (2022) and C++ (2023) through intensive independent study."
 
     Languages:
       - name: Arabic
