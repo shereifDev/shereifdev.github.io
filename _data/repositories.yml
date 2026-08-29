@@ -1,14 +1,17 @@
 github_users:
-  - torvalds
-  - alshedivat
+  - shereifDev
+  
 
 repo_description_lines_max: 2
 
 github_repos:
-  - alshedivat/al-folio
-  - jekyll/jekyll
-  - twbs/bootstrap
-  - jquery/jquery
-  - FortAwesome/Font-Awesome
-  - mathjax/MathJax
-  - jpswalsh/academicons
+  - PCB-Design
+  - Embedded-Linux-Journey
+  - IEEE_azhar_DOCs
+  - NTI_IoT_Graduation_Project
+  - ARM_cortex-microcontroller
+  - AVR-microcontroller
+  - PIC-microcontroller 
+  - C-lang
+  - exercism_bash_track
+  - exercism-python-track
