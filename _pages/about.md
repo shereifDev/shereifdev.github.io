@@ -6,7 +6,7 @@ subtitle: <a href='#'>Electronics & Communications Engineering</a>. Embedded Sys
 profile:
   align: right
   image: prof_pic.jpg
-  image_circular: false # crops the image to make it circular
+  image_circular: true # crops the image to make it circular
   more_info: >
     <p> Al-Azhar University </p>
     <p> Luxor, Egypt </p>
