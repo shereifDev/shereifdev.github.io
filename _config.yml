@@ -11,10 +11,11 @@ contact_note: >
 email: sherif.os.abdelkareem@gmail.com
 github_username: shereifDev
 linkedin_username: sherif-osama-abdelkareem
-#scholar_userid: ""
-#twitter_username: ""
-#orcid_id: ""
-#rss_icon: false
+scholar_userid: ""
+twitter_username: ""
+orcid_id: ""
+wechat_qr: ""
+rss_icon: false
 description: > # the ">" symbol means to ignore newlines until "footer_text:"
   A simple, whitespace theme for academics. Based on [*folio](https://github.com/bogoli/-folio) design.
 footer_text: >
