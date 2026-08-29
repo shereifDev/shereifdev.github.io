@@ -33,13 +33,86 @@ cv:
         area: Electronics & Communications Engineering
         studyType: Bachelor
         start_date: ""
-        end_date: 2027
+        end_date: "2027"
         score: ""
         courses: ""
         highlights:
           - "Relevant Coursework: Microprocessors, Embedded Systems, Logic Design, C++ Programming."
 
-    Experience:
+    Technical Skills:
+      - name: Languages
+        level: ""
+        icon: fa-solid fa-code
+        keywords: "C, Embedded C, C++, Python, Assembly, Shell Scripting (POSIX sh, bash)"
+      - name: Microcontrollers
+        level: ""
+        icon: fa-solid fa-microchip
+        keywords: "AVR (ATmega32), PIC, STM32 (ARM Cortex-M), Arduino"
+      - name: Protocols
+        level: ""
+        icon: fa-solid fa-network-wired
+        keywords: "USART, SPI, I2C, MQTT"
+      - name: Tools & IDES
+        level: ""
+        icon: fa-solid fa-laptop-code
+        keywords: "VSCode, Eclipse, Microchip Studio, MPLAB, STM32CubeIDE, Keil uVision, Arduino IDE"
+      - name: Simulation & Platforms
+        level: ""
+        icon: fa-solid fa-desktop
+        keywords: "Proteus, LabVIEW"
+      - name: Version Control
+        level: ""
+        icon: fa-brands fa-git-alt
+        keywords: "Git, GitHub"
+      - name: Operating Systems
+        level: ""
+        icon: fa-brands fa-linux
+        keywords: "FreeRTOS, Embedded Linux"
+      - name: Others
+        level: ""
+        icon: fa-solid fa-layer-group
+        keywords: "Data Structures, Algorithms, Networking Basics, Hardware Interfacing, IoT, Linux Architecture, Package Management (.deb/dpkg)"
+
+    Projects:
+      - name: IoT Health Monitoring System, ATmega32, MQTT, Blynk, UART, ADC
+        summary: "Developed an end-to-end IoT health monitoring system using ATmega32 to track patient vitals in real-time."
+        highlights:
+          - "Interfaced temperature and heartbeat sensors via ADC, utilizing UART and VSPE for reliable serial communication."
+          - "Integrated MQTT protocol to transmit sensor data to the Blynk platform for remote monitoring, triggering alarms upon critical thresholds. [GitHub Link]"
+        start_date: ""
+        end_date: ""
+      
+      - name: Autonomous Fire-Fighting Robot, Arduino, Sensors, Actuators
+        summary: "Designed and built an autonomous robot equipped with flame sensors for accurate fire detection and rapid response."
+        highlights:
+          - "Integrated an ultrasonic sensor and servo motor for dynamic obstacle avoidance and navigation."
+          - "Utilized motor drivers to control DC motors for precise movement and water pump deployment."
+        start_date: ""
+        end_date: ""
+
+      - name: AVR Embedded Systems Applications, ATmega32, Embedded C
+        summary: "Developed modular Embedded C drivers for various AVR-based applications including a Real-Time Clock (RTC), Smart Safe, and Electronic Voting Machine (EVM)."
+        highlights:
+          - "Implemented efficient hardware interfacing with keypads, LCDs, and EEPROM, utilizing timers and interrupts to optimize system performance. [GitHub Link]"
+        start_date: ""
+        end_date: ""
+
+      - name: C Console Applications (Management Systems), C Programming
+        summary: "Programmed robust Bank and Employee Management systems in C, focusing on advanced data structures and dynamic memory allocation."
+        highlights:
+          - "Applied modular programming and efficient file handling techniques to ensure secure data storage and retrieval. [GitHub Link]"
+        start_date: ""
+        end_date: ""
+
+    Experience & Volunteering:
+      - company: SyntaxIoT
+        position: IoT Engineering Intern
+        location: Online / On-site
+        start_date: 2026
+        end_date: Present
+        summary: "Developing and integrating IoT solutions and engineering workflows."
+        highlights: []
+
       - company: IEEE Al-Azhar Branch
         position: Head of Embedded Systems
         location: Cairo, Egypt
@@ -66,7 +139,6 @@ cv:
         summary: "Delivered technical sessions on IoT fundamentals and technological development to program participants."
         highlights: []
 
-    Volunteer:
       - company: IEEE Al-Azhar Branch
         position: Embedded Systems Instructor - Code Baker Camp
         location: Online
@@ -99,101 +171,51 @@ cv:
         summary: "Developed foundational programming skills and problem-solving techniques using Python."
         highlights: []
 
-    Skills:
-      - name: Languages
-        level: Advanced
-        icon: fa-solid fa-code
-        keywords: "C, Embedded C, C++, Python, Assembly, Shell Scripting (POSIX sh, bash)"
-      - name: Microcontrollers
-        level: Advanced
-        icon: fa-solid fa-microchip
-        keywords: "AVR (ATmega32), PIC, STM32 (ARM Cortex-M), Arduino"
-      - name: Protocols
-        level: Advanced
-        icon: fa-solid fa-network-wired
-        keywords: "USART, SPI, I2C, MQTT"
-      - name: Tools & IDES
-        level: Advanced
-        icon: fa-solid fa-laptop-code
-        keywords: "VSCode, Eclipse, Microchip Studio, MPLAB, STM32CubeIDE, Keil uVision, Arduino IDE"
-      - name: Simulation & Platforms
-        level: Advanced
-        icon: fa-solid fa-desktop
-        keywords: "Proteus, LabVIEW"
-      - name: Version Control
-        level: Advanced
-        icon: fa-brands fa-git-alt
-        keywords: "Git, GitHub"
-      - name: Operating Systems
-        level: Intermediate
-        icon: fa-brands fa-linux
-        keywords: "FreeRTOS, Embedded Linux"
-      - name: Others
-        level: Intermediate
-        icon: fa-solid fa-layer-group
-        keywords: "Data Structures, Algorithms, Networking Basics, Hardware Interfacing, IoT, Linux Architecture, Package Management (.deb/dpkg)"
-
-    Projects:
-      - name: IoT Health Monitoring System, ATmega32, MQTT, Blynk, UART, ADC
-        summary: "Developed an end-to-end IoT health monitoring system using ATmega32 to track patient vitals in real-time."
+    Trainings:
+      - company: National Telecommunication Institute (NTI)
+        position: IoT Intensive Training Program
+        location: Online
+        start_date: 2026
+        end_date: 2026
+        summary: "Advanced IoT & Protocols: Deep dive into MQTT, system integration, and IoT architectures."
         highlights:
-          - "Interfaced temperature and heartbeat sensors via ADC, utilizing UART and VSPE for reliable serial communication."
-          - "Integrated MQTT protocol to transmit sensor data to the Blynk platform for remote monitoring, triggering alarms upon critical thresholds."
+          - "Review & Implementation: Comprehensive review of Embedded C, ATmega32 drivers, and hardware interfacing."
+          
+      - company: Cisco, Harvard, and Mahara-Tech
+        position: Specialized Technical Courses
+        location: Online
+        start_date: 2025
+        end_date: 2025
+        summary: "Networking Basics (Cisco) | Introduction to IoT (Harvard University) | IoT Fundamentals (Mahara-Tech)."
+        highlights:
+          - "ARM Architecture: Mastered ARM Cortex-M basics."
+          
+      - company: Eng. Mohamed Zaghloul
+        position: Embedded Systems Diploma (230 Hours)
+        location: Online
+        start_date: 2024
+        end_date: 2024
+        summary: "Microcontroller Interfacing: Developed modular drivers for AVR peripherals."
+        highlights:
+          - "Core Concepts: C/Embedded C, Data Structures, Algorithms, Testing, and Computer Architecture."
+          - "System Design: RTOS, Bootloader basics, and Communication Protocols (USART, SPI, I2C)."
+
+    Honors & Achievements:
+      - company: HackerRank
+        position: 5-Star Gold Badge in C Programming
+        location: ""
         start_date: ""
         end_date: ""
-      
-      - name: Autonomous Fire-Fighting Robot, Arduino, Sensors, Actuators
-        summary: "Designed and built an autonomous robot equipped with flame sensors for accurate fire detection and rapid response."
-        highlights:
-          - "Integrated an ultrasonic sensor and servo motor for dynamic obstacle avoidance and navigation."
-          - "Utilized motor drivers to control DC motors for precise movement and water pump deployment."
-        start_date: ""
-        end_date: ""
-
-      - name: AVR Embedded Systems Applications, ATmega32, Embedded C
-        summary: "Developed modular Embedded C drivers for various AVR-based applications including a Real-Time Clock (RTC), Smart Safe, and Electronic Voting Machine (EVM)."
-        highlights:
-          - "Implemented efficient hardware interfacing with keypads, LCDs, and EEPROM, utilizing timers and interrupts to optimize system performance."
-        start_date: ""
-        end_date: ""
-
-      - name: C Console Applications (Management Systems), C Programming
-        summary: "Programmed robust Bank and Employee Management systems in C, focusing on advanced data structures and dynamic memory allocation."
-        highlights:
-          - "Applied modular programming and efficient file handling techniques to ensure secure data storage and retrieval."
-        start_date: ""
-        end_date: ""
-
-    Trainings & Certificates:
-      - name: IoT Intensive Training Program
-        date: 2026
-        issuer: National Telecommunication Institute (NTI)
-        icon: fa-solid fa-certificate
-        summary: "Advanced IoT & Protocols (MQTT, system integration, IoT architectures) and Review & Implementation (Embedded C, ATmega32 drivers, hardware interfacing)."
-      - name: Specialized Technical Courses
-        date: 2025
-        issuer: Cisco, Harvard, and Mahara-Tech
-        icon: fa-solid fa-certificate
-        summary: "Networking Basics (Cisco), Introduction to IoT (Harvard University), IoT Fundamentals (Mahara-Tech), and ARM Architecture."
-      - name: Embedded Systems Diploma (230 Hours)
-        date: 2024
-        issuer: Eng. Mohamed Zaghloul
-        icon: fa-solid fa-certificate
-        summary: "Microcontroller Interfacing (AVR peripherals), Core Concepts (C/Embedded C, Data Structures, Algorithms), and System Design (RTOS, Bootloader, Communication Protocols)."
-
-    Awards & Honors:
-      - title: 5-Star Gold Badge in C Programming
-        authors: []
-        date: ""
-        awarder: HackerRank
-        url: ""
         summary: "Achieved the 5-Star Gold Badge in C Programming."
-      - title: Self-Learning (Python & C++)
-        authors: []
-        date: "2022 - 2023"
-        awarder: Independent Study
-        url: ""
-        summary: "Built a solid foundation in Python (2022) and C++ (2023) through intensive independent study."
+        highlights: []
+
+      - company: Self-Learning
+        position: Python (2022) and C++ (2023)
+        location: ""
+        start_date: "2022"
+        end_date: "2023"
+        summary: "Built a solid foundation in Python and C++ through intensive independent study."
+        highlights: []
 
     Languages:
       - name: Arabic
