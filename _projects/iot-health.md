@@ -2,7 +2,7 @@
 layout: page
 title: IoT Health Monitoring
 description: ATmega32, MQTT, Blynk, UART, ADC
-img: assets/img/7.jpg
+img: assets/img/7.png
 importance: 1
 category: work
 ---
@@ -11,13 +11,13 @@ Developed an end-to-end IoT health monitoring system using ATmega32 to track pat
 
 <div class="row">
     <div class="col-sm mt-3 mt-md-0">
-        {% include figure.liquid loading="eager" path="assets/img/1.jpg" title="Temperature Sensor" class="img-fluid rounded z-depth-1" %}
+        {% include figure.liquid loading="eager" path="assets/img/1.png" title="Temperature Sensor" class="img-fluid rounded z-depth-1" %}
     </div>
     <div class="col-sm mt-3 mt-md-0">
-        {% include figure.liquid loading="eager" path="assets/img/2.jpg" title="Heartbeat Sensor" class="img-fluid rounded z-depth-1" %}
+        {% include figure.liquid loading="eager" path="assets/img/2.png" title="Heartbeat Sensor" class="img-fluid rounded z-depth-1" %}
     </div>
     <div class="col-sm mt-3 mt-md-0">
-        {% include figure.liquid loading="eager" path="assets/img/3.jpg" title="ATmega32 MCU" class="img-fluid rounded z-depth-1" %}
+        {% include figure.liquid loading="eager" path="assets/img/3.png" title="ATmega32 MCU" class="img-fluid rounded z-depth-1" %}
     </div>
 </div>
 <div class="caption">
@@ -28,7 +28,7 @@ The core of the system relies on robust communication. Utilizing UART and VSPE w
 
 <div class="row">
     <div class="col-sm mt-3 mt-md-0">
-        {% include figure.liquid loading="eager" path="assets/img/4.jpg" title="System Architecture" class="img-fluid rounded z-depth-1" %}
+        {% include figure.liquid loading="eager" path="assets/img/4.png" title="System Architecture" class="img-fluid rounded z-depth-1" %}
     </div>
 </div>
 <div class="caption">
@@ -39,10 +39,10 @@ Finally, the system is designed to trigger immediate alarms upon reaching critic
 
 <div class="row justify-content-sm-center">
     <div class="col-sm-8 mt-3 mt-md-0">
-        {% include figure.liquid path="assets/img/5.jpg" title="Serial Terminal" class="img-fluid rounded z-depth-1" %}
+        {% include figure.liquid path="assets/img/5.png" title="Serial Terminal" class="img-fluid rounded z-depth-1" %}
     </div>
     <div class="col-sm-4 mt-3 mt-md-0">
-        {% include figure.liquid path="assets/img/6.jpg" title="Blynk App" class="img-fluid rounded z-depth-1" %}
+        {% include figure.liquid path="assets/img/6.png" title="Blynk App" class="img-fluid rounded z-depth-1" %}
     </div>
 </div>
 <div class="caption">
