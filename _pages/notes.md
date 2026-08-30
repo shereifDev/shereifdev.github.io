@@ -10,8 +10,8 @@ nav_order: 3
 <div class="projects">
 {% if site.notes %}
   <div class="row">
-    {% for note in site.notes %}
-      {% include project.liquid project=note %}
+    {% for project in site.notes %}
+      {% include projects.liquid %}
     {% endfor %}
   </div>
 {% else %}
