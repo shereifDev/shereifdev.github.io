@@ -52,7 +52,7 @@ Finally, the system is designed to trigger immediate alarms upon reaching critic
 <div class="row mt-4">
     <div class="col-sm text-center">
         <video width="100%" controls class="rounded z-depth-1">
-            <source src="{{ '/assets/img/p1.mp4' | relative_url }}" type="video/mp4">
+            <source src="{{ '/assets/video/p1.mp4' | relative_url }}" type="video/mp4">
             Your browser does not support the video tag.
         </video>
     </div>
