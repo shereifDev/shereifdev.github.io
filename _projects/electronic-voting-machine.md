@@ -61,7 +61,7 @@ When a candidate's votes exceed 9, the code mathematically extracts the tens and
 
 <div class="row mt-4">
     <div class="col-sm text-center">
-        <a href="https://github.com/shereifDev/AVR-microcontroller/tree/main/MY-projects/EVO" class="btn btn-sm z-depth-1" role="button" target="_blank">
+        <a href="https://github.com/shereifDev/AVR-microcontroller/tree/main/MY-projects/EVM" class="btn btn-sm z-depth-1" role="button" target="_blank">
             <i class="fa-brands fa-github"></i> View Source Code on GitHub
         </a>
     </div>
