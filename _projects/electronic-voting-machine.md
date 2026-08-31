@@ -2,7 +2,7 @@
 layout: page
 title: Electronic Voting Machine
 description: AVR ATmega32, 16x2 LCD, Internal Pull-ups, Software Debouncing
-img: assets/img/evo_cover.png
+img: assets/img/50.png
 importance: 7
 category: work
 ---
@@ -11,13 +11,13 @@ Developed a 4-channel Electronic Voting Machine (EVO) using an AVR ATmega32 micr
 
 <div class="row">
     <div class="col-sm mt-3 mt-md-0">
-        {% include figure.liquid loading="eager" path="assets/img/evo_1.png" title="Welcome Screen" class="img-fluid rounded z-depth-1" %}
+        {% include figure.liquid loading="eager" path="assets/img/51.png" title="Welcome Screen" class="img-fluid rounded z-depth-1" %}
     </div>
     <div class="col-sm mt-3 mt-md-0">
-        {% include figure.liquid loading="eager" path="assets/img/evo_2.png" title="Initial Counters" class="img-fluid rounded z-depth-1" %}
+        {% include figure.liquid loading="eager" path="assets/img/52.png" title="Initial Counters" class="img-fluid rounded z-depth-1" %}
     </div>
     <div class="col-sm mt-3 mt-md-0">
-        {% include figure.liquid loading="eager" path="assets/img/evo_3.png" title="Active Voting" class="img-fluid rounded z-depth-1" %}
+        {% include figure.liquid loading="eager" path="assets/img/53.png" title="Active Voting" class="img-fluid rounded z-depth-1" %}
     </div>
 </div>
 <div class="caption">
@@ -34,13 +34,13 @@ Mechanical button bounces often cause false multi-clicks. This system implements
 
 <div class="row mt-3">
     <div class="col-sm mt-3 mt-md-0">
-        {% include figure.liquid loading="eager" path="assets/img/evo_4.png" title="System Reset" class="img-fluid rounded z-depth-1" %}
+        {% include figure.liquid loading="eager" path="assets/img/54.png" title="System Reset" class="img-fluid rounded z-depth-1" %}
     </div>
     <div class="col-sm mt-3 mt-md-0">
-        {% include figure.liquid loading="eager" path="assets/img/evo_5.png" title="Debouncing Logic" class="img-fluid rounded z-depth-1" %}
+        {% include figure.liquid loading="eager" path="assets/img/55.png" title="Debouncing Logic" class="img-fluid rounded z-depth-1" %}
     </div>
     <div class="col-sm mt-3 mt-md-0">
-        {% include figure.liquid loading="eager" path="assets/img/evo_6.png" title="Reset Hex Clearing" class="img-fluid rounded z-depth-1" %}
+        {% include figure.liquid loading="eager" path="assets/img/56.png" title="Reset Hex Clearing" class="img-fluid rounded z-depth-1" %}
     </div>
 </div>
 <div class="caption">
@@ -53,7 +53,7 @@ When a candidate's votes exceed 9, the code mathematically extracts the tens and
 <div class="row mt-4">
     <div class="col-sm text-center">
         <video width="100%" controls class="rounded z-depth-1">
-            <source src="{{ '/assets/video/evo_demo.mp4' | relative_url }}" type="video/mp4">
+            <source src="{{ '/assets/video/EVO.mp4' | relative_url }}" type="video/mp4">
             Your browser does not support the video tag.
         </video>
     </div>
