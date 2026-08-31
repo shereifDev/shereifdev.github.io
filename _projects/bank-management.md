@@ -1,58 +1,66 @@
 ---
 layout: page
 title: Bank Management System
-description: C Programming, Structs, Arrays, Procedural Programming
-img: assets/img/8.png
+description: C Programming, Static Arrays, Structs, Colored Terminal UI
+img: assets/img/bank_cover.png
 importance: 2
 category: work
 ---
 
-Developed a Bank Management system entirely in C. This project focuses on the core principles of procedural programming, utilizing **Arrays of Structs** to manage client accounts locally in memory, and features a clean, interactive Terminal interface.
+Developed a fully functional Bank Management system entirely in C. This project focuses on procedural programming, utilizing **Static Arrays of Structs** to manage client accounts locally in runtime memory, completely independent of external databases.
 
 <div class="row">
     <div class="col-sm mt-3 mt-md-0">
-        {% include figure.liquid loading="eager" path="assets/img/9.png" title="Main Menu" class="img-fluid rounded z-depth-1" %}
+        {% include figure.liquid loading="eager" path="assets/img/bank_1.png" title="Main Menu" class="img-fluid rounded z-depth-1" %}
     </div>
     <div class="col-sm mt-3 mt-md-0">
-        {% include figure.liquid loading="eager" path="assets/img/10.png" title="Account Creation" class="img-fluid rounded z-depth-1" %}
+        {% include figure.liquid loading="eager" path="assets/img/bank_2.png" title="Admin & User Windows" class="img-fluid rounded z-depth-1" %}
     </div>
     <div class="col-sm mt-3 mt-md-0">
-        {% include figure.liquid loading="eager" path="assets/img/11.png" title="Transactions" class="img-fluid rounded z-depth-1" %}
+        {% include figure.liquid loading="eager" path="assets/img/bank_3.png" title="Customer Data" class="img-fluid rounded z-depth-1" %}
     </div>
 </div>
 <div class="caption">
-    Terminal Interface: Clear console outputs for the main dashboard, client registration, and standard banking operations.
+    System Architecture: Separation of privileges (Admin vs. User windows) and detailed customer data structures including National ID, DOB, and Account Status.
 </div>
 
-To maintain data integrity during runtime, the system implements input validation for core banking transactions like Deposits, Withdrawals, and Transfers, ensuring account balances are updated accurately based on user input.
+A standout feature of this project is the **Colored Terminal UI**. By defining custom C macros for ANSI escape codes (e.g., `__yellow__`, `__green__`, `__red__`), the console provides an interactive and visually organized experience for the user.
+
+<div class="row">
+    <div class="col-sm mt-3 mt-md-0">
+        {% include figure.liquid loading="eager" path="assets/img/bank_4.png" title="Account Deletion Logic" class="img-fluid rounded z-depth-1" %}
+    </div>
+</div>
+<div class="caption">
+    Memory Management: Efficiently deleting accounts by shifting array elements dynamically and decrementing the global index, preventing memory fragmentation.
+</div>
+
+The system ensures robust transaction processing (Deposits, Withdrawals, and Transfers). It includes strict validations to check if an account is "Dormant" or "Active", prevents negative cash inputs, and securely updates balances across the array elements.
 
 <div class="row justify-content-sm-center">
     <div class="col-sm-8 mt-3 mt-md-0">
-        {% include figure.liquid path="assets/img/12.png" title="Transaction Processing" class="img-fluid rounded z-depth-1" %}
+        {% include figure.liquid path="assets/img/bank_5.png" title="Money Transfer Logic" class="img-fluid rounded z-depth-1" %}
     </div>
     <div class="col-sm-4 mt-3 mt-md-0">
-        {% include figure.liquid path="assets/img/13.png" title="Structs Definition" class="img-fluid rounded z-depth-1" %}
+        {% include figure.liquid path="assets/img/bank_6.png" title="Security & Authentication" class="img-fluid rounded z-depth-1" %}
     </div>
 </div>
 <div class="caption">
-    Console transaction execution (Left) and defined C Structs for managing account data in arrays (Right).
+    Handling sender/receiver balance updates safely (Left) and custom password matching logic (Right).
 </div>
 
-The project is designed by dividing the system into discrete functions for each feature. This includes searching for specific accounts, updating existing client details, and managing array indices to handle account deletions seamlessly.
+The codebase is highly modular, heavily utilizing `switch` cases, iterative loops, and string manipulation functions (`strcmp`, `strcpy`, `strcspn`) to handle user inputs securely.
 
 <div class="row">
     <div class="col-sm mt-3 mt-md-0">
-        {% include figure.liquid loading="eager" path="assets/img/14.png" title="Search Functionality" class="img-fluid rounded z-depth-1" %}
+        {% include figure.liquid loading="eager" path="assets/img/bank_7.png" title="Change Password" class="img-fluid rounded z-depth-1" %}
     </div>
     <div class="col-sm mt-3 mt-md-0">
-        {% include figure.liquid loading="eager" path="assets/img/15.png" title="Edit Records" class="img-fluid rounded z-depth-1" %}
-    </div>
-    <div class="col-sm mt-3 mt-md-0">
-        {% include figure.liquid loading="eager" path="assets/img/16.png" title="Delete Account" class="img-fluid rounded z-depth-1" %}
+        {% include figure.liquid loading="eager" path="assets/img/bank_8.png" title="Account Status" class="img-fluid rounded z-depth-1" %}
     </div>
 </div>
 <div class="caption">
-    Additional functionalities: Searching client databases, modifying account details, and simulating account removal from the static array.
+    Additional functionalities: Secure password resetting and toggling account accessibility states.
 </div>
 
 <div class="row mt-4">
