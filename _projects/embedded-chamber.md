@@ -57,6 +57,15 @@ From a software engineering perspective, the project utilizes a highly modular *
 
 <div class="row mt-4">
     <div class="col-sm text-center">
+        <video width="100%" controls class="rounded z-depth-1">
+            <source src="{{ '/assets/video/ch.mp4' | relative_url }}" type="video/mp4">
+            Your browser does not support the video tag.
+        </video>
+    </div>
+</div>
+
+<div class="row mt-4">
+    <div class="col-sm text-center">
         <a href="https://github.com/shereifDev/PIC-microcontroller/tree/main/MY-projects/Simple%20Game" class="btn btn-sm z-depth-1" role="button" target="_blank">
             <i class="fa-brands fa-github"></i> View Source Code on GitHub
         </a>
