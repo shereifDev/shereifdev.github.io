@@ -2,7 +2,7 @@
 layout: page
 title: Bank Management System
 description: C Programming, Static Arrays, Structs, Colored Terminal UI
-img: assets/img/bank_cover.png
+img: assets/img/8.png
 importance: 2
 category: work
 ---
@@ -11,13 +11,13 @@ Developed a fully functional Bank Management system entirely in C. This project 
 
 <div class="row">
     <div class="col-sm mt-3 mt-md-0">
-        {% include figure.liquid loading="eager" path="assets/img/bank_1.png" title="Main Menu" class="img-fluid rounded z-depth-1" %}
+        {% include figure.liquid loading="eager" path="assets/img/9.png" title="Main Menu" class="img-fluid rounded z-depth-1" %}
     </div>
     <div class="col-sm mt-3 mt-md-0">
-        {% include figure.liquid loading="eager" path="assets/img/bank_2.png" title="Admin & User Windows" class="img-fluid rounded z-depth-1" %}
+        {% include figure.liquid loading="eager" path="assets/img/10.png" title="Admin & User Windows" class="img-fluid rounded z-depth-1" %}
     </div>
     <div class="col-sm mt-3 mt-md-0">
-        {% include figure.liquid loading="eager" path="assets/img/bank_3.png" title="Customer Data" class="img-fluid rounded z-depth-1" %}
+        {% include figure.liquid loading="eager" path="assets/img/11.png" title="Customer Data" class="img-fluid rounded z-depth-1" %}
     </div>
 </div>
 <div class="caption">
@@ -28,7 +28,7 @@ A standout feature of this project is the **Colored Terminal UI**. By defining c
 
 <div class="row">
     <div class="col-sm mt-3 mt-md-0">
-        {% include figure.liquid loading="eager" path="assets/img/bank_4.png" title="Account Deletion Logic" class="img-fluid rounded z-depth-1" %}
+        {% include figure.liquid loading="eager" path="assets/img/12.png" title="Account Deletion Logic" class="img-fluid rounded z-depth-1" %}
     </div>
 </div>
 <div class="caption">
@@ -39,10 +39,10 @@ The system ensures robust transaction processing (Deposits, Withdrawals, and Tra
 
 <div class="row justify-content-sm-center">
     <div class="col-sm-8 mt-3 mt-md-0">
-        {% include figure.liquid path="assets/img/bank_5.png" title="Money Transfer Logic" class="img-fluid rounded z-depth-1" %}
+        {% include figure.liquid path="assets/img/13.png" title="Money Transfer Logic" class="img-fluid rounded z-depth-1" %}
     </div>
     <div class="col-sm-4 mt-3 mt-md-0">
-        {% include figure.liquid path="assets/img/bank_6.png" title="Security & Authentication" class="img-fluid rounded z-depth-1" %}
+        {% include figure.liquid path="assets/img/14.png" title="Security & Authentication" class="img-fluid rounded z-depth-1" %}
     </div>
 </div>
 <div class="caption">
@@ -53,10 +53,10 @@ The codebase is highly modular, heavily utilizing `switch` cases, iterative loop
 
 <div class="row">
     <div class="col-sm mt-3 mt-md-0">
-        {% include figure.liquid loading="eager" path="assets/img/bank_7.png" title="Change Password" class="img-fluid rounded z-depth-1" %}
+        {% include figure.liquid loading="eager" path="assets/img/15.png" title="Change Password" class="img-fluid rounded z-depth-1" %}
     </div>
     <div class="col-sm mt-3 mt-md-0">
-        {% include figure.liquid loading="eager" path="assets/img/bank_8.png" title="Account Status" class="img-fluid rounded z-depth-1" %}
+        {% include figure.liquid loading="eager" path="assets/img/16.png" title="Account Status" class="img-fluid rounded z-depth-1" %}
     </div>
 </div>
 <div class="caption">
