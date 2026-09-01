@@ -12,8 +12,8 @@ nav: true
         <a href="{{ '/notes/avr/' | relative_url }}" class="text-decoration-none text-reset">
             <div class="card hoverable h-100 text-center p-4" style="border-radius: 15px;">
                 <i class="fa-solid fa-microchip fa-3x mb-3" style="color: var(--global-theme-color);"></i>
-                <h4 class="card-title font-weight-bold">Embedded AVR</h4>
-                <p class="card-text text-muted" style="font-size: 0.9rem;">Hardware interfacing, drivers, and ATmega32 MCU architecture.</p>
+                <h4 class="card-title font-weight-bold">Embedded/IoT </h4>
+                <p class="card-text text-muted" style="font-size: 0.9rem;">Hardware interfacing, drivers, and MCU architecture.</p>
             </div>
         </a>
     </div>
@@ -35,7 +35,7 @@ nav: true
             <div class="card hoverable h-100 text-center p-4" style="border-radius: 15px;">
                 <i class="fa-solid fa-network-wired fa-3x mb-3" style="color: var(--global-theme-color);"></i>
                 <h4 class="card-title font-weight-bold">CS Fundamentals</h4>
-                <p class="card-text text-muted" style="font-size: 0.9rem;">Networking, OOP, and Data Structures notes.</p>
+                <p class="card-text text-muted" style="font-size: 0.9rem;">Networking, OOP , Programming Langs , and Data Structures notes.</p>
             </div>
         </a>
     </div>
