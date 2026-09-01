@@ -74,16 +74,24 @@ description: Handwritten summaries and schematic workflows for MCU interfacing a
   </a>
 
   <!-- Lesson 8 -->
-  <a href="https://drive.google.com/file/d/1zeNeVlUcKbmfrJx5eVO_aO-r1Nlr538r/view?usp=sharing" target="_blank" class="list-group-item list-group-item-action d-flex justify-content-between align-items-center p-4 mb-3 hoverable" style="border-radius: 10px; border: 1px solid rgba(0,0,0,0.125);">
+  <a href="https://drive.google.com/file/d/12ZaEC2DOP-JA8mk-35JnDsTa3WvKvxJJ/view?usp=sharing" target="_blank" class="list-group-item list-group-item-action d-flex justify-content-between align-items-center p-4 mb-3 hoverable" style="border-radius: 10px; border: 1px solid rgba(0,0,0,0.125);">
     <div>
-      <h5 class="mb-1 font-weight-bold"><i class="fa-solid fa-file-pdf mr-2" style="color: #e2001a;"></i> 8. Computer Arch</h5>
-      <p class="mb-0 text-muted" style="font-size: 0.9rem;">Memories , Numbering systems , Microprocessor Interfacing and Architicture.</p>
+      <h5 class="mb-1 font-weight-bold"><i class="fa-solid fa-file-pdf mr-2" style="color: #e2001a;"></i> 8. Modbus Protocol</h5>
+      <p class="mb-0 text-muted" style="font-size: 0.9rem;">RS485 , MAX485 , ESP32 frame and Connections.</p>
+    </div>
+    <i class="fa-solid fa-arrow-up-right-from-square text-muted"></i>
+  </a>
+
+    <!-- Lesson 9 -->
+  <a href="https://drive.google.com/file/d/18aJtTOUB-d6BqfYjI5QrTkgCJ4acW0x5/view?usp=sharing" target="_blank" class="list-group-item list-group-item-action d-flex justify-content-between align-items-center p-4 mb-3 hoverable" style="border-radius: 10px; border: 1px solid rgba(0,0,0,0.125);">
+    <div>
+      <h5 class="mb-1 font-weight-bold"><i class="fa-solid fa-file-pdf mr-2" style="color: #e2001a;"></i> 9. ARM Arch</h5>
+      <p class="mb-0 text-muted" style="font-size: 0.9rem;">ARM-Cortex Family , ISA , Processor Modes , Bit Banding , Advanced Interrupt , Buses , DMA and Bus Matrix.</p>
     </div>
     <i class="fa-solid fa-arrow-up-right-from-square text-muted"></i>
   </a>
 
 
-  
 </div>
 
 
