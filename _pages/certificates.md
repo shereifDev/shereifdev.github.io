@@ -17,7 +17,7 @@ nav_order: 4
                 <h6 class="card-subtitle mb-2 text-muted">IBM</h6>
                 <p class="card-text"><b>Skills:</b> Linux, Bash (Scripting Language)</p>
                 <!-- Replace # with your actual credential link -->
-                <a href="#" target="_blank" class="btn btn-sm mt-auto" style="background-color: var(--global-theme-color); color: white;">
+                <a href="https://coursera.org/share/d57fa362be09ea174f15be68b358bf94" target="_blank" class="btn btn-sm mt-auto" style="background-color: var(--global-theme-color); color: white;">
                     <i class="fa-solid fa-arrow-up-right-from-square"></i> Show Credential
                 </a>
             </div>
@@ -33,7 +33,7 @@ nav_order: 4
                 <h6 class="card-subtitle mb-2 text-muted">IBM</h6>
                 <p class="card-text"><b>Skills:</b> Git, GitHub</p>
                 <!-- Replace # with your actual credential link -->
-                <a href="#" target="_blank" class="btn btn-sm mt-auto" style="background-color: var(--global-theme-color); color: white;">
+                <a href="https://coursera.org/share/5851af01f99012532768eff95a19aa90" target="_blank" class="btn btn-sm mt-auto" style="background-color: var(--global-theme-color); color: white;">
                     <i class="fa-solid fa-arrow-up-right-from-square"></i> Show Credential
                 </a>
             </div>
@@ -67,7 +67,7 @@ nav_order: 4
                 <h6 class="card-subtitle mb-2 text-muted">Microchip</h6>
                 <p class="card-text"><b>Skills:</b> C (Programming Language)</p>
                 <!-- Replace # with your actual credential link -->
-                <a href="#" target="_blank" class="btn btn-sm mt-auto" style="background-color: var(--global-theme-color); color: white;">
+                <a href="https://verify.skilljar.com/c/4hg5jzwfvrh2" target="_blank" class="btn btn-sm mt-auto" style="background-color: var(--global-theme-color); color: white;">
                     <i class="fa-solid fa-arrow-up-right-from-square"></i> Show Credential
                 </a>
             </div>
@@ -85,7 +85,7 @@ nav_order: 4
                 <h6 class="card-subtitle mb-2 text-muted">Cisco</h6>
                 <p class="card-text"><b>Skills:</b> C++ (Programming Language)</p>
                 <!-- Replace # with your actual credential link -->
-                <a href="#" target="_blank" class="btn btn-sm mt-auto" style="background-color: var(--global-theme-color); color: white;">
+                <a href="https://www.credly.com/badges/a0b3479e-61d1-4970-b19e-de91a8a18acb/public_url" target="_blank" class="btn btn-sm mt-auto" style="background-color: var(--global-theme-color); color: white;">
                     <i class="fa-solid fa-arrow-up-right-from-square"></i> Show Credential
                 </a>
             </div>
