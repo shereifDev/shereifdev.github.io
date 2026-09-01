@@ -1,0 +1,34 @@
+<div class="social">
+  <div class="contact-icons">
+    
+    <!-- GitHub -->
+    {% if site.github_username %}
+      <a href="https://github.com/{{ site.github_username }}" title="GitHub" target="_blank"><i class="fa-brands fa-github"></i></a>
+    {% endif %}
+
+    <!-- LinkedIn -->
+    {% if site.linkedin_username %}
+      <a href="https://www.linkedin.com/in/{{ site.linkedin_username }}" title="LinkedIn" target="_blank"><i class="fa-brands fa-linkedin"></i></a>
+    {% endif %}
+
+    <!-- WhatsApp -->
+    {% if site.whatsapp_number %}
+      <a href="https://wa.me/{{ site.whatsapp_number }}" title="WhatsApp" target="_blank"><i class="fa-brands fa-whatsapp"></i></a>
+    {% endif %}
+
+    <!-- Gmail -->
+    {% if site.email %}
+      <a href="mailto:{{ site.email }}" title="Email"><i class="fa-solid fa-envelope"></i></a>
+    {% endif %}
+
+    <!-- CV -->
+    {% if site.cv_pdf %}
+      <a href="{{ site.cv_pdf | relative_url }}" title="CV" target="_blank"><i class="fa-solid fa-file-lines"></i></a>
+    {% endif %}
+
+  </div>
+  
+  <div class="contact_note">
+    Feel free to contact me via email or LinkedIn.
+  </div>
+</div>
