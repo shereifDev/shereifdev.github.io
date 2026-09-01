@@ -34,8 +34,6 @@ description: Handwritten summaries and schematic workflows for MCU interfacing a
     <i class="fa-solid fa-arrow-up-right-from-square text-muted"></i>
   </a>
 
-</div>
-
   <!-- Lesson 4 -->
   <a href="https://drive.google.com/file/d/YOUR-LINK-HERE/view" target="_blank" class="list-group-item list-group-item-action d-flex justify-content-between align-items-center p-4 mb-3 hoverable" style="border-radius: 10px; border: 1px solid rgba(0,0,0,0.125);">
     <div>
@@ -45,7 +43,6 @@ description: Handwritten summaries and schematic workflows for MCU interfacing a
     <i class="fa-solid fa-arrow-up-right-from-square text-muted"></i>
   </a>
 
-</div>
 
   <!-- Lesson 5 -->
   <a href="https://drive.google.com/file/d/YOUR-LINK-HERE/view" target="_blank" class="list-group-item list-group-item-action d-flex justify-content-between align-items-center p-4 mb-3 hoverable" style="border-radius: 10px; border: 1px solid rgba(0,0,0,0.125);">
@@ -56,7 +53,6 @@ description: Handwritten summaries and schematic workflows for MCU interfacing a
     <i class="fa-solid fa-arrow-up-right-from-square text-muted"></i>
   </a>
 
-</div>
 
   <!-- Lesson 6 -->
   <a href="https://drive.google.com/file/d/YOUR-LINK-HERE/view" target="_blank" class="list-group-item list-group-item-action d-flex justify-content-between align-items-center p-4 mb-3 hoverable" style="border-radius: 10px; border: 1px solid rgba(0,0,0,0.125);">
@@ -67,7 +63,6 @@ description: Handwritten summaries and schematic workflows for MCU interfacing a
     <i class="fa-solid fa-arrow-up-right-from-square text-muted"></i>
   </a>
 
-</div>
 
   <!-- Lesson 3 -->
   <a href="https://drive.google.com/file/d/YOUR-LINK-HERE/view" target="_blank" class="list-group-item list-group-item-action d-flex justify-content-between align-items-center p-4 mb-3 hoverable" style="border-radius: 10px; border: 1px solid rgba(0,0,0,0.125);">
