@@ -53,6 +53,10 @@ Currently, I am actively expanding my expertise into Cloud computing and DevOps,
     <!-- GitHub -->
     <a href="https://github.com/shereifDev" title="GitHub" target="_blank" style="margin: 0 10px; font-size: 2rem;"><i class="fa-brands fa-github"></i></a>
 
+    <!-- DockerHub -->
+    <!-- استبدل your-username باسم حسابك على دكر هب -->
+    <a href="https://hub.docker.com/u/shereifDev" title="DockerHub" target="_blank" style="margin: 0 10px; font-size: 2rem;"><i class="fa-brands fa-docker"></i></a>
+    
     <!-- LinkedIn -->
     <a href="https://www.linkedin.com/in/sherif-osama-abdelkareem" title="LinkedIn" target="_blank" style="margin: 0 10px; font-size: 2rem;"><i class="fa-brands fa-linkedin"></i></a>
 
