@@ -32,7 +32,29 @@ My core technical experience revolves around developing firmware, drivers, and p
 Currently, I am actively expanding my expertise into Cloud computing and DevOps, gaining hands-on experience with Linux administration, Docker containers, LocalStack environments, and GitHub Actions for seamless cloud integration.
 
 <h4 class="mt-5">Core Tools & Technologies</h4>
-<div class="row text-center mt-4 mb-4">
+
+<!-- Embedded & Software Skills -->
+<div class="row text-center mt-4 mb-2">
+    <div class="col-sm-3 col-6 mb-3">
+        <i class="devicon-c-plain colored" style="font-size: 3.5rem;"></i>
+        <p class="mt-2 text-muted" style="font-size: 0.9rem;">C / Embedded C</p>
+    </div>
+    <div class="col-sm-3 col-6 mb-3">
+        <i class="devicon-cplusplus-plain colored" style="font-size: 3.5rem;"></i>
+        <p class="mt-2 text-muted" style="font-size: 0.9rem;">C++</p>
+    </div>
+    <div class="col-sm-3 col-6 mb-3">
+        <i class="devicon-python-plain colored" style="font-size: 3.5rem;"></i>
+        <p class="mt-2 text-muted" style="font-size: 0.9rem;">Python</p>
+    </div>
+    <div class="col-sm-3 col-6 mb-3">
+        <i class="devicon-arduino-plain colored" style="font-size: 3.5rem;"></i>
+        <p class="mt-2 text-muted" style="font-size: 0.9rem;">Microcontrollers</p>
+    </div>
+</div>
+
+<!-- DevOps & Cloud Skills -->
+<div class="row text-center mb-4">
     <div class="col-sm-3 col-6 mb-3">
         <i class="devicon-bash-plain colored" style="font-size: 3.5rem;"></i>
         <p class="mt-2 text-muted" style="font-size: 0.9rem;">Shell Scripting</p>
