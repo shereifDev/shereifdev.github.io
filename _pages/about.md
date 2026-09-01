@@ -8,11 +8,10 @@ profile:
   image: prof_pic.jpg
   image_circular: true # crops the image to make it circular
   more_info: >
-    <p> Al-Azhar University </p>
-    <p> Luxor, Egypt </p>
+    
 
 selected_papers: false # includes a list of papers marked as "selected={true}"
-social: false # includes social icons at the bottom of the page
+social: false # تم التعديل هنا لتعطيل الأيقونات الافتراضية
 
 announcements:
   enabled: false # includes a list of news items
@@ -71,4 +70,31 @@ Currently, I am actively expanding my expertise into Cloud computing and DevOps,
         <i class="devicon-linux-plain colored" style="font-size: 3.5rem;"></i>
         <p class="mt-2 text-muted" style="font-size: 0.9rem;">Linux Admin</p>
     </div>
+</div>
+
+<!-- Custom Social Icons -->
+<div class="social text-center mt-5 mb-5">
+  <div class="contact-icons">
+    
+    <!-- GitHub -->
+    <a href="https://github.com/shereifDev" title="GitHub" target="_blank" style="margin: 0 10px; font-size: 2rem;"><i class="fa-brands fa-github"></i></a>
+
+    <!-- LinkedIn -->
+    <a href="https://www.linkedin.com/in/sherif-osama-abdelkareem" title="LinkedIn" target="_blank" style="margin: 0 10px; font-size: 2rem;"><i class="fa-brands fa-linkedin"></i></a>
+
+    <!-- WhatsApp -->
+    <!-- تأكد من كتابة الرقم هنا بدون مسافات، مثال: 201012345678 -->
+    <a href="https://wa.me/201147089021" title="WhatsApp" target="_blank" style="margin: 0 10px; font-size: 2rem;"><i class="fa-brands fa-whatsapp"></i></a>
+
+    <!-- Gmail -->
+    <a href="mailto:sherif.os.abdelkareem@gmail.com" title="Email" style="margin: 0 10px; font-size: 2rem;"><i class="fa-solid fa-envelope"></i></a>
+
+    <!-- CV -->
+    <a href="{{ 'assets/pdf/CV.pdf' | relative_url }}" title="CV" target="_blank" style="margin: 0 10px; font-size: 2rem;"><i class="fa-solid fa-file-lines"></i></a>
+
+  </div>
+  
+  <div class="contact_note mt-3 text-muted" style="font-size: 0.9rem;">
+    Feel free to contact me via email or LinkedIn.
+  </div>
 </div>
