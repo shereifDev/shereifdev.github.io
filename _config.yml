@@ -147,7 +147,7 @@ bing_site_verification: # out your bing-site-verification ID (Bing Webmaster)
 # Blog
 # -----------------------------------------------------------------------------
 
-blog_name: ShereifDev Blog
+blog_name: Sherif Blog
 blog_description: Technical articles, project logs, and tutorials on Embedded Systems, IoT, and DevOps.
 permalink: /blog/:year/:title/
 lsi: false # produce an index for related posts
