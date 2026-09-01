@@ -21,7 +21,7 @@ cv:
   address:
     street: ""
     city: Cairo
-    region: Nasr City
+    region: ""
     postalCode: ""
     countryCode: EG
 
