@@ -29,47 +29,18 @@ I am an Electronics and Communications Engineering undergraduate at Al-Azhar Uni
 My core technical experience revolves around developing firmware, drivers, and peripheral initializations for microcontrollers such as ATmega32, STM32, ESP32, and Arduino. I regularly write in C, C++, Embedded C, and Python, handling everything from hardware circuit simulations to protocol framing for UART, SPI, I2C, and MQTT. 
 
 Currently, I am actively expanding my expertise into Cloud computing and DevOps, gaining hands-on experience with Linux administration, Docker containers, LocalStack environments, and GitHub Actions for seamless cloud integration.
+<h4 class="mt-5 mb-3">Core Tools & Technologies</h4>
 
-<h4 class="mt-5">Core Tools & Technologies</h4>
-
-<!-- Embedded & Software Skills -->
-<div class="row text-center mt-4 mb-2">
-    <div class="col-sm-3 col-6 mb-3">
-        <i class="devicon-c-plain colored" style="font-size: 3.5rem;"></i>
-        <p class="mt-2 text-muted" style="font-size: 0.9rem;">C / Embedded C</p>
-    </div>
-    <div class="col-sm-3 col-6 mb-3">
-        <i class="devicon-cplusplus-plain colored" style="font-size: 3.5rem;"></i>
-        <p class="mt-2 text-muted" style="font-size: 0.9rem;">C++</p>
-    </div>
-    <div class="col-sm-3 col-6 mb-3">
-        <i class="devicon-python-plain colored" style="font-size: 3.5rem;"></i>
-        <p class="mt-2 text-muted" style="font-size: 0.9rem;">Python</p>
-    </div>
-    <div class="col-sm-3 col-6 mb-3">
-        <i class="devicon-arduino-plain colored" style="font-size: 3.5rem;"></i>
-        <p class="mt-2 text-muted" style="font-size: 0.9rem;">Microcontrollers</p>
-    </div>
-</div>
-
-<!-- DevOps & Cloud Skills -->
-<div class="row text-center mb-4">
-    <div class="col-sm-3 col-6 mb-3">
-        <i class="devicon-bash-plain colored" style="font-size: 3.5rem;"></i>
-        <p class="mt-2 text-muted" style="font-size: 0.9rem;">Shell Scripting</p>
-    </div>
-    <div class="col-sm-3 col-6 mb-3">
-        <i class="devicon-docker-plain colored" style="font-size: 3.5rem;"></i>
-        <p class="mt-2 text-muted" style="font-size: 0.9rem;">Docker</p>
-    </div>
-    <div class="col-sm-3 col-6 mb-3">
-        <i class="devicon-github-original" style="font-size: 3.5rem; color: var(--global-text-color);"></i>
-        <p class="mt-2 text-muted" style="font-size: 0.9rem;">CI/CD & Actions</p>
-    </div>
-    <div class="col-sm-3 col-6 mb-3">
-        <i class="devicon-linux-plain colored" style="font-size: 3.5rem;"></i>
-        <p class="mt-2 text-muted" style="font-size: 0.9rem;">Linux Admin</p>
-    </div>
+<!-- Skills Badges Style -->
+<div class="mb-4" style="line-height: 2.2;">
+    <span class="badge badge-secondary font-weight-bold mr-2 mb-2 p-2" style="font-size: 0.9rem;"><i class="fa-solid fa-microchip mr-1"></i> C / Embedded C</span>
+    <span class="badge badge-secondary font-weight-bold mr-2 mb-2 p-2" style="font-size: 0.9rem;"><i class="fa-solid fa-code mr-1"></i> C++</span>
+    <span class="badge badge-secondary font-weight-bold mr-2 mb-2 p-2" style="font-size: 0.9rem;"><i class="fa-brands fa-python mr-1"></i> Python</span>
+    <span class="badge badge-secondary font-weight-bold mr-2 mb-2 p-2" style="font-size: 0.9rem;"><i class="fa-solid fa-bolt mr-1"></i> Microcontrollers</span>
+    <span class="badge badge-secondary font-weight-bold mr-2 mb-2 p-2" style="font-size: 0.9rem;"><i class="fa-solid fa-terminal mr-1"></i> Shell Scripting</span>
+    <span class="badge badge-secondary font-weight-bold mr-2 mb-2 p-2" style="font-size: 0.9rem;"><i class="fa-brands fa-docker mr-1"></i> Docker</span>
+    <span class="badge badge-secondary font-weight-bold mr-2 mb-2 p-2" style="font-size: 0.9rem;"><i class="fa-solid fa-infinity mr-1"></i> CI/CD & Actions</span>
+    <span class="badge badge-secondary font-weight-bold mr-2 mb-2 p-2" style="font-size: 0.9rem;"><i class="fa-brands fa-linux mr-1"></i> Linux Admin</span>
 </div>
 
 <!-- Custom Social Icons -->
