@@ -19,9 +19,9 @@ cv:
       url: https://youtube.com/@Smartchip-q11
 
   address:
-    street: ""
-    city: Cairo
-    region: ""
+    street: "Egypt"
+    city: "Cairo"
+    region: "Nasr City"
     postalCode: ""
     countryCode: EG
 
