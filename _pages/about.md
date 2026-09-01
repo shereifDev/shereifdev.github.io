@@ -47,6 +47,9 @@ Currently, I am actively expanding my expertise into Cloud computing and DevOps,
 <div class="social text-center mt-5 mb-5">
   <div class="contact-icons">
     
+    <!-- YouTube -->
+    <a href="https://www.youtube.com/@Smartchip-q1l" title="YouTube" target="_blank" style="margin: 0 10px; font-size: 2rem;"><i class="fa-brands fa-youtube"></i></a>
+
     <!-- GitHub -->
     <a href="https://github.com/shereifDev" title="GitHub" target="_blank" style="margin: 0 10px; font-size: 2rem;"><i class="fa-brands fa-github"></i></a>
 
