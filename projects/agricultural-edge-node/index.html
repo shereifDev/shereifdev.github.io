@@ -1,0 +1,265 @@
+<!DOCTYPE html> <html lang="en"> <head> <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"> <meta charset="utf-8"> <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no"> <meta http-equiv="X-UA-Compatible" content="IE=edge"> <title> Scalable Agricultural Edge Node with Cloud-Native FOTA | Sherif Os. Abdelkareem </title> <meta name="author" content="Sherif Os. Abdelkareem"> <meta name="description" content="ESP32, Custom PCB, RS485/Modbus, Docker, GitHub Actions CI/CD, Blynk IoT"> <meta name="keywords" content="jekyll, jekyll-theme, academic-website, portfolio-website"> <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self' 'unsafe-inline' https:; style-src 'self' 'unsafe-inline' https:; img-src 'self' data: https:; font-src 'self' data: https:; media-src 'self' https:; frame-src 'self' https:; connect-src 'self' https:;"> <style>
+  :root {
+    --max-content-width: 930px;
+  }
+</style> <link rel="stylesheet" href="/al-folio/assets/css/tailwind.css?v=50c64c15cbb9fd1ce6056fdb8bcb4b62"> <link defer rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@7.2.0/css/all.min.css" integrity="sha256-MVopmdyC2tYTiJ8wlktf0uh0v4NgT+vNdyVFepi7Q0c=" crossorigin="anonymous"> <link defer rel="stylesheet" href="https://cdn.jsdelivr.net/npm/academicons@1.9.5/css/academicons.min.css" integrity="sha256-SzrCOBJbGVFMahewkgjwnApaV2+av1DwMAA+/QGLyZw=" crossorigin="anonymous"> <link defer rel="stylesheet" href="https://cdn.jsdelivr.net/npm/scholar-icons@1.0.3/css/scholar-icons.css" integrity="sha256-VY3hHVj/hNX3fYG6wtbA6TcKJQl7+FthzGSyIB64klY=" crossorigin="anonymous"> <link defer rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700|Roboto+Slab:100,300,400,500,700|Material+Icons&amp;display=swap"> <link defer rel="stylesheet" href="/al-folio/assets/css/jekyll-pygments-themes-github.css?v=591dab5a4e56573bf4ef7fd332894c99" media="" id="highlight_theme_light"> <link rel="shortcut icon" href="data:image/svg+xml,&lt;svg%20xmlns=%22http://www.w3.org/2000/svg%22%20viewBox=%220%200%20100%20100%22&gt;&lt;text%20y=%22.9em%22%20font-size=%2290%22&gt;%E2%9A%9B%EF%B8%8F&lt;/text&gt;&lt;/svg&gt;"> <link rel="stylesheet" href="/al-folio/assets/css/main.css?v=3116ba77db9ee1581d05bb3e86fbf7f1"> <link rel="canonical" href="https://alshedivat.github.io/al-folio/projects/agricultural-edge-node/"> <script src="/al-folio/assets/js/theme.js?v=5286c3e4c334d0ecb8fc0c40ff4fa7ec"></script> <link defer rel="stylesheet" href="/al-folio/assets/css/jekyll-pygments-themes-native.css?v=5847e5ed4a4568527aa6cfab446049ca" media="none" id="highlight_theme_dark"> <script>
+    initTheme();
+  </script> </head> <body class="fixed-top-nav "> <header> <nav id="navbar" class="navbar navbar-light navbar-expand-sm fixed-top" role="navigation"> <div class="container"> <a class="navbar-brand title font-weight-lighter" href="/al-folio/"> <span class="font-weight-bold">Sherif</span> Os. Abdelkareem </a> <button class="navbar-toggler collapsed navbar-toggler-main" type="button" data-nav-toggle="navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation"> <span class="sr-only">Toggle navigation</span> <span class="icon-bar top-bar"></span> <span class="icon-bar middle-bar"></span> <span class="icon-bar bottom-bar"></span> </button> <div class="collapse navbar-collapse navbar-collapse-main" id="navbarNav"> <ul class="navbar-nav navbar-menu-list flex-nowrap"> <li class="nav-item "> <a class="nav-link" href="/al-folio/">about </a> </li> <li class="nav-item "> <a class="nav-link" href="/al-folio/notes/">notes </a> </li> <li class="nav-item "> <a class="nav-link" href="/al-folio/blog/">blog </a> </li> <li class="nav-item active"> <a class="nav-link" href="/al-folio/projects/">projects <span class="sr-only">(current)</span> </a> </li> <li class="nav-item "> <a class="nav-link" href="/al-folio/certificates/">Certificates </a> </li> <li class="nav-item "> <a class="nav-link" href="/al-folio/repositories/">repositories </a> </li> <li class="nav-item "> <a class="nav-link" href="/al-folio/cv/">CV </a> </li> <li class="nav-item dropdown "> <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-nav-dropdown-toggle="true" aria-haspopup="true" aria-expanded="false">submenus </a> <div class="dropdown-menu dropdown-menu-right" aria-labelledby="navbarDropdown"> <a class="dropdown-item " href="/al-folio/books/">bookshelf</a> <div class="dropdown-divider"></div> <a class="dropdown-item " href="/al-folio/blog/">blog</a> </div> </li> <li class="nav-item"> <button id="search-toggle" type="button" title="Search" aria-label="Open search"> <span class="nav-link">ctrl k <i class="fa-solid fa-magnifying-glass"></i></span> </button> </li> <li class="toggle-container"> <button id="light-toggle" type="button" title="Change theme" aria-label="Change color theme"> <i class="fa-half-sun-moon" id="light-toggle-system"></i> <i class="fa-solid fa-moon" id="light-toggle-dark"></i> <i class="fa-solid fa-sun" id="light-toggle-light"></i> </button> </li> </ul> </div> </div> </nav> <progress id="progress" value="0"> <div class="progress-container"> <span class="progress-bar"></span> </div> </progress> </header> <div class="container mt-5" role="main"> <div class="post"> <header class="post-header"> <h1 class="post-title">Scalable Agricultural Edge Node with Cloud-Native FOTA</h1> <p class="post-description">ESP32, Custom PCB, RS485/Modbus, Docker, GitHub Actions CI/CD, Blynk IoT</p> </header> <article> <table> <tbody> <tr> <td> <strong>Client:</strong> Syntax-IoT  </td> <td>  <strong>Role:</strong> IoT Engineering Intern  </td> <td>  <strong>Stack:</strong> ESP32, C/C++, PCB Design (EasyEDA), Docker, GitHub Actions, Blynk IoT</td> </tr> </tbody> </table> <p>An industrial-grade, ESP32-based agricultural edge node built around a custom PCB, paired with a fully automated Cloud-Native Firmware-Over-The-Air (FOTA) pipeline. The project bridges low-level embedded hardware design with modern DevOps practice, removing the need to physically visit a field device to update its firmware.</p> <div class="row"> <div class="col-sm mt-3 mt-md-0"> <figure> <picture> <source class="responsive-img-srcset" srcset="/al-folio/assets/img/28-480.webp 480w,/al-folio/assets/img/28-800.webp 800w,/al-folio/assets/img/28-1400.webp 1400w," type="image/webp" sizes="95vw"></source> <img src="/al-folio/assets/img/28.png" class="img-fluid rounded z-depth-1" width="100%" height="auto" title="Agricultural Edge Node - PCB 3D Render" loading="eager" onerror="this.onerror=null; document.querySelectorAll('.responsive-img-srcset').forEach(function (n) { n.remove(); });"> </picture> </figure> </div> </div> <div class="caption"> 3D render of the custom Agri-Edge-Node PCB (v1.0) — ESP32-WROOM-32E module, RS485 terminal, solar and battery inputs, isolated control block. </div> <h3 id="the-problem">The Problem</h3> <p>Syntax-IoT operates monitoring nodes across remote agricultural and aquaculture sites. At scale, two things become bottlenecks:</p> <ul> <li> <strong>Manual firmware flashing</strong> — sending a technician to physically reflash a microcontroller on every field unit is slow and expensive.</li> <li> <strong>Field downtime</strong> — every on-site intervention takes the node offline and interrupts data collection.</li> </ul> <p>The goal was a self-contained edge device that can be updated remotely, safely, and automatically — with zero site visits.</p> <h3 id="system-architecture">System Architecture</h3> <p>The node follows a “Hybrid Edge Architecture”: embedded hardware for sensing and control, and a cloud-native pipeline for build, release, and OTA delivery.</p> <div class="row"> <div class="col-sm mt-3 mt-md-0"> <figure> <picture> <source class="responsive-img-srcset" srcset="/al-folio/assets/img/31-480.webp 480w,/al-folio/assets/img/31-800.webp 800w,/al-folio/assets/img/31-1400.webp 1400w," type="image/webp" sizes="95vw"></source> <img src="/al-folio/assets/img/31.png" class="img-fluid rounded z-depth-1" width="100%" height="auto" title="Hardware Architecture Block Diagram" loading="eager" onerror="this.onerror=null; document.querySelectorAll('.responsive-img-srcset').forEach(function (n) { n.remove(); });"> </picture> </figure> </div> </div> <div class="caption"> Block-level view of the four subsystems: power supply, core logic, industrial interface, and isolation barrier. </div> <hr> <h2 id="hardware-engineering">Hardware Engineering</h2> <p>The board was fully designed from schematic to Gerber in EasyEDA and fabricated as a 4-terminal, solar/battery-powered field unit.</p> <ul> <li> <strong>Core:</strong> ESP32-WROOM-32E (N4, 4MB) for Wi-Fi connectivity and dual-core processing.</li> <li> <strong>Industrial sensing:</strong> SP3485EN-L/TR RS485 transceiver for Modbus RTU communication with industrial sensors.</li> <li> <strong>Electrical isolation:</strong> three PC817C-S optocouplers isolate the RS485 side from the ESP32 logic domain to protect against field-side electrical noise.</li> <li> <strong>Power management:</strong> TP4056 charge controller with an 18650 Li-ion cell, a solar input, and an HT7333 LDO regulating down to a clean 3.3 V rail — the node is fully off-grid capable.</li> <li> <strong>Housekeeping:</strong> boot/reset push-button, status LEDs (ESP + solar charge), and a dedicated programming header (J_PROG) for UART flashing.</li> </ul> <div class="row"> <div class="col-sm-6 mt-3 mt-md-0"> <figure> <picture> <source class="responsive-img-srcset" srcset="/al-folio/assets/img/29-480.webp 480w,/al-folio/assets/img/29-800.webp 800w,/al-folio/assets/img/29-1400.webp 1400w," type="image/webp" sizes="95vw"></source> <img src="/al-folio/assets/img/29.png" class="img-fluid rounded z-depth-1" width="100%" height="auto" title="Full Schematic" loading="eager" onerror="this.onerror=null; document.querySelectorAll('.responsive-img-srcset').forEach(function (n) { n.remove(); });"> </picture> </figure> </div> <div class="col-sm-6 mt-3 mt-md-0"> <figure> <picture> <source class="responsive-img-srcset" srcset="/al-folio/assets/img/30-480.webp 480w,/al-folio/assets/img/30-800.webp 800w,/al-folio/assets/img/30-1400.webp 1400w," type="image/webp" sizes="95vw"></source> <img src="/al-folio/assets/img/30.png" class="img-fluid rounded z-depth-1" width="100%" height="auto" title="PCB 3D Render - Top View" loading="eager" onerror="this.onerror=null; document.querySelectorAll('.responsive-img-srcset').forEach(function (n) { n.remove(); });"> </picture> </figure> </div> </div> <div class="caption"> Left: complete schematic split into Power Management and Control blocks. Right: top-down 3D render of the routed PCB. </div> <p><strong>Key components (from the released BOM):</strong></p> <table> <thead> <tr> <th>Ref. Designator</th> <th>Part</th> <th>Function</th> </tr> </thead> <tbody> <tr> <td>U1</td> <td>ESP32-WROOM-32E-N4 (4MB)</td> <td>Main microcontroller / Wi-Fi</td> </tr> <tr> <td>U3</td> <td>TP4056</td> <td>Li-ion battery charge management</td> </tr> <tr> <td>U2</td> <td>HT7333-A</td> <td>3.3V LDO regulator</td> </tr> <tr> <td>U4</td> <td>SP3485EN-L/TR</td> <td>RS485 transceiver</td> </tr> <tr> <td>U5–U7</td> <td>PC817C-S</td> <td>Opto-isolation (x3)</td> </tr> <tr> <td>U11</td> <td>B0303S-1WR3</td> <td>Isolated DC-DC converter</td> </tr> </tbody> </table> <div class="row mt-4"> <div class="col-sm text-center"> <figure> <picture> <source class="responsive-img-srcset" srcset="/al-folio/assets/img/34-480.webp 480w,/al-folio/assets/img/34-800.webp 800w,/al-folio/assets/img/34-1400.webp 1400w," type="image/webp" sizes="95vw"></source> <img src="/al-folio/assets/img/34.png" class="img-fluid rounded z-depth-1" width="100%" height="auto" title="PCB 3D Render - Angle View" loading="eager" onerror="this.onerror=null; document.querySelectorAll('.responsive-img-srcset').forEach(function (n) { n.remove(); });"> </picture> </figure> </div> </div> <div class="caption"> Angled render showing the solar/battery/RS485 terminal blocks alongside the isolation barrier components. </div> <hr> <h2 id="firmware">Firmware</h2> <p>The firmware (C/C++, ESP-IDF/Arduino core) handles Wi-Fi connectivity, Modbus polling over RS485, threshold checks, telemetry publishing to Blynk, and — critically — checking for and applying OTA updates on every cycle.</p> <div class="row"> <div class="col-sm mt-3 mt-md-0"> <figure> <picture> <source class="responsive-img-srcset" srcset="/al-folio/assets/img/32-480.webp 480w,/al-folio/assets/img/32-800.webp 800w,/al-folio/assets/img/32-1400.webp 1400w," type="image/webp" sizes="95vw"></source> <img src="/al-folio/assets/img/32.png" class="img-fluid rounded z-depth-1" width="100%" height="auto" title="Firmware Flowchart" loading="eager" onerror="this.onerror=null; document.querySelectorAll('.responsive-img-srcset').forEach(function (n) { n.remove(); });"> </picture> </figure> </div> </div> <div class="caption"> Runtime flow: boot → Wi-Fi/provisioning → Modbus read → telemetry push → OTA check → flash to inactive partition → reboot. </div> <p>Updates are written to the inactive OTA partition (dual-bank) so a failed update never bricks a deployed unit — the device can always fall back to the last known-good firmware.</p> <hr> <h2 id="devops--cloud-native-fota-pipeline">DevOps &amp; Cloud-Native FOTA Pipeline</h2> <p>This is the part that removes the human from the update loop. Every firmware commit triggers an automated build-and-release pipeline:</p> <div class="row"> <div class="col-sm mt-3 mt-md-0"> <figure> <picture> <source class="responsive-img-srcset" srcset="/al-folio/assets/img/33-480.webp 480w,/al-folio/assets/img/33-800.webp 800w,/al-folio/assets/img/33-1400.webp 1400w," type="image/webp" sizes="95vw"></source> <img src="/al-folio/assets/img/33.png" class="img-fluid rounded z-depth-1" width="100%" height="auto" title="CI/CD Pipeline" loading="eager" onerror="this.onerror=null; document.querySelectorAll('.responsive-img-srcset').forEach(function (n) { n.remove(); });"> </picture> </figure> </div> </div> <div class="caption"> GitHub push → GitHub Actions webhook → isolated Docker build container → PlatformIO/ESP-IDF compile → firmware.bin → Blynk Air → wireless FOTA push to the node fleet. </div> <ol> <li> <strong>Version control</strong> — firmware commits pushed to GitHub.</li> <li> <strong>CI trigger</strong> — GitHub Actions spins up an isolated Docker container on every push.</li> <li> <strong>Reproducible build</strong> — PlatformIO/ESP-IDF compiles the firmware inside the container, so builds never depend on a developer’s local machine setup.</li> <li> <strong>FOTA distribution</strong> — the resulting <code class="language-plaintext highlighter-rouge">firmware.bin</code> is pushed to Blynk Air, which handles secure Over-The-Air delivery to every node in the field.</li> </ol> <hr> <h2 id="outcome">Outcome</h2> <ul> <li>Fully routed and fabricated custom PCB (schematic, layout, Gerbers, and BOM).</li> <li>Assembled, functional ESP32 edge node prototype.</li> <li>Modular C/C++ firmware with Modbus RTU acquisition and dual-bank OTA support.</li> <li>Working CI/CD pipeline (GitHub Actions + Docker) producing reproducible firmware builds.</li> <li>Live Blynk dashboard for telemetry and remote FOTA management.</li> </ul> <div class="row mt-4"> <div class="col-sm text-center"> <a href="https://github.com/shereifDev/SyntaxIoT_Gateway" class="btn btn-sm z-depth-1" role="button" target="_blank" rel="external nofollow noopener"> <i class="fa-brands fa-github"></i> View Source Code on GitHub </a> </div> </div> </article> </div> </div> <footer class="mt-5" role="contentinfo"> </footer> <script>
+  window.alFolio = {
+    compatBootstrap: false
+  };
+</script> <script src="/al-folio/assets/js/nav-toggle.js?v=141bd79a73ebc0f0b6ea58e440ae79fc"></script> <script defer src="https://cdn.jsdelivr.net/npm/masonry-layout@4.2.2/dist/masonry.pkgd.min.js" integrity="sha256-Nn1q/fx0H7SNLZMQ5Hw5JLaTRZp0yILA/FRexe19VdI=" crossorigin="anonymous"></script> <script defer src="https://cdn.jsdelivr.net/npm/imagesloaded@5.0.0/imagesloaded.pkgd.min.js" integrity="sha256-htrLFfZJ6v5udOG+3kNLINIKh2gvoKqwEhHYfTTMICc=" crossorigin="anonymous"></script> <script defer src="/al-folio/assets/js/masonry.js?v=e49affc7bd2646f6acdad1dbe02c2359" type="text/javascript"></script> <script defer type="text/javascript" id="MathJax-script" src="https://cdn.jsdelivr.net/npm/mathjax@3.2.2/es5/tex-mml-chtml.js" integrity="sha256-MASABpB4tYktI2Oitl4t+78w/lyA+D7b/s9GEP0JOGI=" crossorigin="anonymous"></script> <script src="/al-folio/assets/al_math/js/mathjax-setup.js"></script> <script src="/al-folio/assets/js/tooltips-setup.js?v=fe487e99db6c43751e6e7bdb2d6a0611"></script> <script src="/al-folio/assets/js/no_defer.js?v=53b1b1a645525975c963ce8bf8bfefcf"></script> <script defer src="/al-folio/assets/js/common.js?v=87baac90f765f2f3362dcf6aaf312a8a"></script> <script defer src="/al-folio/assets/js/copy_code.js?v=c8a01c11a92744d44b093fc3bda915df" type="text/javascript"></script> <script defer src="/al-folio/assets/js/jupyter_new_tab.js?v=896d254890d9b47f0281f63bfccf0dee"></script> <script async src="https://d1bxh8uas1mnw7.cloudfront.net/assets/embed.js"></script> <script async src="https://badge.dimensions.ai/badge.js"></script> <script defer src="https://cdn.jsdelivr.net/npm/medium-zoom@1.1.0/dist/medium-zoom.min.js" integrity="sha256-ZgMyDAIYDYGxbcpJcfUnYwNevG/xi9OHKaR/8GK+jWc=" crossorigin="anonymous"></script> <script defer src="/al-folio/assets/al_img_tools/js/zoom.js"></script> <script defer src="/al-folio/assets/js/progress-bar.js?v=499464c5c63ced6cf7ad62509f1e2610" type="text/javascript"></script> <script src="https://cdn.jsdelivr.net/npm/vanilla-back-to-top@7.2.1/dist/vanilla-back-to-top.min.js" integrity="sha256-uMJJ3EoTyfRBoTbR+lrfu1uRQ87RZG8AR3cVNuQVeFg=" crossorigin="anonymous"></script> <script>
+    addBackToTop();
+  </script> <script type="module" src="/al-folio/assets/al_search/js/search/ninja-keys.min.js"></script> <ninja-keys hidebreadcrumbs noautoloadmdicons placeholder="Type to start searching"></ninja-keys> <script src="/al-folio/assets/al_search/js/search-setup.js"></script> <script>
+// get the ninja-keys element
+const ninja = document.querySelector('ninja-keys');
+
+// add the home and posts menu items
+ninja.data = [{
+    id: "nav-about",
+    title: "about",
+    section: "Navigation",
+    handler: () => {
+      window.location.href = "/al-folio/";
+    },
+  },{id: "nav-notes",
+          title: "notes",
+          description: "Select a category to explore my technical summaries, notes, and slide decks.",
+          section: "Navigation",
+          handler: () => {
+            window.location.href = "/al-folio/notes/";
+          },
+        },{id: "nav-blog",
+          title: "blog",
+          description: "",
+          section: "Navigation",
+          handler: () => {
+            window.location.href = "/al-folio/blog/";
+          },
+        },{id: "nav-projects",
+          title: "projects",
+          description: "A showcase of my embedded systems, IoT, and software development projects.",
+          section: "Navigation",
+          handler: () => {
+            window.location.href = "/al-folio/projects/";
+          },
+        },{id: "nav-certificates",
+          title: "Certificates",
+          description: "A collection of my professional certifications and technical training records.",
+          section: "Navigation",
+          handler: () => {
+            window.location.href = "/al-folio/certificates/";
+          },
+        },{id: "nav-repositories",
+          title: "repositories",
+          description: "",
+          section: "Navigation",
+          handler: () => {
+            window.location.href = "/al-folio/repositories/";
+          },
+        },{id: "nav-cv",
+          title: "CV",
+          description: "My professional background, experience, education, and technical certifications.",
+          section: "Navigation",
+          handler: () => {
+            window.location.href = "/al-folio/cv/";
+          },
+        },{id: "dropdown-bookshelf",
+              title: "bookshelf",
+              description: "",
+              section: "Dropdown",
+              handler: () => {
+                window.location.href = "/al-folio/books/";
+              },
+            },{id: "dropdown-blog",
+              title: "blog",
+              description: "",
+              section: "Dropdown",
+              handler: () => {
+                window.location.href = "/al-folio/blog/";
+              },
+            },{id: "post-designing-a-smart-agriculture-iot-gateway",
+        
+          title: "Designing a Smart Agriculture IoT Gateway",
+        
+        description: "A technical overview of building an IoT gateway for smart farming, from block diagrams to schematic workflows.",
+        section: "Posts",
+        handler: () => {
+          
+            window.location.href = "/al-folio/blog/2026/smart-agriculture-iot-gateway/";
+          
+        },
+      },{id: "post-google-gemini-updates-flash-1-5-gemma-2-and-project-astra",
+        
+          title: 'Google Gemini updates: Flash 1.5, Gemma 2 and Project Astra <svg width="1.2rem" height="1.2rem" top=".5rem" viewbox="0 0 40 40" xmlns="http://www.w3.org/2000/svg"><path d="M17 13.5v6H5v-12h6m3-3h6v6m0-6-9 9" class="icon_svg-stroke" stroke="#999" stroke-width="1.5" fill="none" fill-rule="evenodd" stroke-linecap="round" stroke-linejoin="round"></path></svg>',
+        
+        description: "We’re sharing updates across our Gemini family of models and a glimpse of Project Astra, our vision for the future of AI assistants.",
+        section: "Posts",
+        handler: () => {
+          
+            window.open("https://blog.google/technology/ai/google-gemini-update-flash-ai-assistant-io-2024/", "_blank");
+          
+        },
+      },{id: "post-displaying-external-posts-on-your-al-folio-blog",
+        
+          title: 'Displaying External Posts on Your al-folio Blog <svg width="1.2rem" height="1.2rem" top=".5rem" viewbox="0 0 40 40" xmlns="http://www.w3.org/2000/svg"><path d="M17 13.5v6H5v-12h6m3-3h6v6m0-6-9 9" class="icon_svg-stroke" stroke="#999" stroke-width="1.5" fill="none" fill-rule="evenodd" stroke-linecap="round" stroke-linejoin="round"></path></svg>',
+        
+        description: "",
+        section: "Posts",
+        handler: () => {
+          
+            window.open("https://medium.com/@al-folio/displaying-external-posts-on-your-al-folio-blog-b60a1d241a0a?source=rss-17feae71c3c4------2", "_blank");
+          
+        },
+      },{id: "books-the-godfather",
+          title: 'The Godfather',
+          description: "",
+          section: "Books",handler: () => {
+              window.location.href = "/al-folio/books/the_godfather/";
+            },},{id: "news-a-simple-inline-announcement",
+          title: 'A simple inline announcement.',
+          description: "",
+          section: "News",},{id: "news-a-long-announcement-with-details",
+          title: 'A long announcement with details',
+          description: "",
+          section: "News",handler: () => {
+              window.location.href = "/al-folio/news/announcement_2/";
+            },},{id: "news-a-simple-inline-announcement-with-markdown-emoji-sparkles-smile",
+          title: 'A simple inline announcement with Markdown emoji! <img class="emoji" title=":sparkles:" alt=":sparkles:" src="https://github.githubassets.com/images/icons/emoji/unicode/2728.png" height="20" width="20"> <img class="emoji" title=":smile:" alt=":smile:" src="https://github.githubassets.com/images/icons/emoji/unicode/1f604.png" height="20" width="20">',
+          description: "",
+          section: "News",},{id: "notes-embedded-iot-notes",
+          title: 'Embedded/IoT Notes',
+          description: "Handwritten summaries and schematic workflows for MCU interfacing and Communication Protocols.",
+          section: "Notes",handler: () => {
+              window.location.href = "/al-folio/notes/avr/";
+            },},{id: "notes-cs-fundamentals-notes",
+          title: 'CS Fundamentals Notes',
+          description: "Comprehensive summaries on Networking, Object-Oriented Programming (OOP), and Data Structures.",
+          section: "Notes",handler: () => {
+              window.location.href = "/al-folio/notes/cs-fundamentals/";
+            },},{id: "notes-devops-amp-cloud-notes",
+          title: 'DevOps &amp; Cloud Notes',
+          description: "Typed summaries and course notes covering Docker, CI/CD pipelines, and Linux Administration.",
+          section: "Notes",handler: () => {
+              window.location.href = "/al-folio/notes/devops/";
+            },},{id: "projects-scalable-agricultural-edge-node-with-cloud-native-fota",
+          title: 'Scalable Agricultural Edge Node with Cloud-Native FOTA',
+          description: "ESP32, Custom PCB, RS485/Modbus, Docker, GitHub Actions CI/CD, Blynk IoT",
+          section: "Projects",handler: () => {
+              window.location.href = "/al-folio/projects/agricultural-edge-node/";
+            },},{id: "projects-avr-electronic-calculator",
+          title: 'AVR Electronic Calculator',
+          description: "ATmega32, 4x4 Keypad, 16x2 LCD, C Programming",
+          section: "Projects",handler: () => {
+              window.location.href = "/al-folio/projects/avr-calculator/";
+            },},{id: "projects-bank-management-system",
+          title: 'Bank Management System',
+          description: "C Programming, Static Arrays, Structs, Colored Terminal UI",
+          section: "Projects",handler: () => {
+              window.location.href = "/al-folio/projects/bank-management/";
+            },},{id: "projects-digital-clock-amp-timer-system",
+          title: 'Digital Clock &amp; Timer System',
+          description: "ATmega32, Multiplexed 6-Digit 7-Segment, Timer2 Interrupts",
+          section: "Projects",handler: () => {
+              window.location.href = "/al-folio/projects/digital-clock-rtc/";
+            },},{id: "projects-electronic-voting-machine",
+          title: 'Electronic Voting Machine',
+          description: "AVR ATmega32, 16x2 LCD, Internal Pull-ups, Software Debouncing",
+          section: "Projects",handler: () => {
+              window.location.href = "/al-folio/projects/electronic-voting-machine/";
+            },},{id: "projects-the-embedded-chamber",
+          title: 'The Embedded Chamber',
+          description: "PIC18F4620, State Machine, HAL Drivers, Interactive Game",
+          section: "Projects",handler: () => {
+              window.location.href = "/al-folio/projects/embedded-chamber/";
+            },},{id: "projects-iot-health-monitoring",
+          title: 'IoT Health Monitoring',
+          description: "ATmega32, MQTT, Blynk, UART, ADC",
+          section: "Projects",handler: () => {
+              window.location.href = "/al-folio/projects/iot-health/";
+            },},{id: "projects-secure-safe-system",
+          title: 'Secure Safe System',
+          description: "AVR ATmega32, EEPROM Memory, Keypad, Security Lockout",
+          section: "Projects",handler: () => {
+              window.location.href = "/al-folio/projects/secure-safe/";
+            },},{id: "teachings-data-science-fundamentals",
+          title: 'Data Science Fundamentals',
+          description: "This course covers the foundational aspects of data science, including data collection, cleaning, analysis, and visualization. Students will learn practical skills for working with real-world datasets.",
+          section: "Teachings",handler: () => {
+              window.location.href = "/al-folio/teachings/data-science-fundamentals/";
+            },},{id: "teachings-introduction-to-machine-learning",
+          title: 'Introduction to Machine Learning',
+          description: "This course provides an introduction to machine learning concepts, algorithms, and applications. Students will learn about supervised and unsupervised learning, model evaluation, and practical implementations.",
+          section: "Teachings",handler: () => {
+              window.location.href = "/al-folio/teachings/introduction-to-machine-learning/";
+            },},{
+        id: 'social-cv',
+        title: 'CV',
+        section: 'Socials',
+        handler: () => {
+          window.open("/al-folio/assets/pdf/example_pdf.pdf", "_blank");
+        },
+      },{
+        id: 'social-email',
+        title: 'email',
+        section: 'Socials',
+        handler: () => {
+          window.open("mailto:%79%6F%75@%65%78%61%6D%70%6C%65.%63%6F%6D", "_blank");
+        },
+      },{
+        id: 'social-inspire',
+        title: 'Inspire HEP',
+        section: 'Socials',
+        handler: () => {
+          window.open("https://inspirehep.net/authors/1010907", "_blank");
+        },
+      },{
+        id: 'social-rss',
+        title: 'RSS Feed',
+        section: 'Socials',
+        handler: () => {
+          window.open("/al-folio/feed.xml", "_blank");
+        },
+      },{
+        id: 'social-scholar',
+        title: 'Google Scholar',
+        section: 'Socials',
+        handler: () => {
+          window.open("https://scholar.google.com/citations?user=qc6CJjYAAAAJ", "_blank");
+        },
+      },{
+        id: 'social-custom_social',
+        title: 'Custom_social',
+        section: 'Socials',
+        handler: () => {
+          window.open("https://www.alberteinstein.com/", "_blank");
+        },
+      },{
+      id: 'light-theme',
+      title: 'Change theme to light',
+      description: 'Change the theme of the site to Light',
+      section: 'Theme',
+      handler: () => {
+        setThemeSetting("light");
+      },
+    },
+    {
+      id: 'dark-theme',
+      title: 'Change theme to dark',
+      description: 'Change the theme of the site to Dark',
+      section: 'Theme',
+      handler: () => {
+        setThemeSetting("dark");
+      },
+    },
+    {
+      id: 'system-theme',
+      title: 'Use system default theme',
+      description: 'Change the theme of the site to System Default',
+      section: 'Theme',
+      handler: () => {
+        setThemeSetting("system");
+      },
+    },];
+
+</script> <script src="/al-folio/assets/al_search/js/shortcut-key.js"></script> </body> </html>
