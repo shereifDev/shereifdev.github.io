@@ -4,7 +4,7 @@ title: Scalable Agricultural Edge Node with Cloud-Native FOTA
 description: ESP32, Custom PCB, RS485/Modbus, Docker, GitHub Actions CI/CD, Blynk IoT
 img: assets/img/28.png
 importance: 1
-category: work
+category: underway
 ---
 
 **Client:** Syntax-IoT &nbsp;|&nbsp; **Role:** IoT Engineering Intern &nbsp;|&nbsp; **Stack:** ESP32, C/C++, PCB Design (EasyEDA), Docker, GitHub Actions, Blynk IoT
