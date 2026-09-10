@@ -4,7 +4,7 @@ layout: page
 title: syntaxIoT
 description: AVR ATmega32, EEPROM Memory, Keypad, Security Lockout
 img: assets/img/28.png
-importance: 1
+importance: 6
 category: underway
 ---
 
