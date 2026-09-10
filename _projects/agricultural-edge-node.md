@@ -2,7 +2,7 @@
 layout: page
 title: Scalable Agricultural Edge Node with Cloud-Native FOTA
 description: ESP32, Custom PCB, RS485/Modbus, Docker, GitHub Actions CI/CD, Blynk IoT
-img: assets/img/28.png
+img: assets/img/57_.png
 importance: 1
 category: underway
 ---
@@ -13,7 +13,7 @@ An industrial-grade, ESP32-based agricultural edge node built around a custom PC
 
 <div class="row">
     <div class="col-sm mt-3 mt-md-0">
-        {% include figure.liquid loading="eager" path="assets/img/28.png" title="Agricultural Edge Node - PCB 3D Render" class="img-fluid rounded z-depth-1" %}
+        {% include figure.liquid loading="eager" path="assets/img/57.png" title="Agricultural Edge Node - PCB 3D Render" class="img-fluid rounded z-depth-1" %}
     </div>
 </div>
 <div class="caption">
@@ -35,7 +35,7 @@ The node follows a "Hybrid Edge Architecture": embedded hardware for sensing and
 
 <div class="row">
     <div class="col-sm mt-3 mt-md-0">
-        {% include figure.liquid loading="eager" path="assets/img/31.png" title="Hardware Architecture Block Diagram" class="img-fluid rounded z-depth-1" %}
+        {% include figure.liquid loading="eager" path="assets/img/58.png" title="Hardware Architecture Block Diagram" class="img-fluid rounded z-depth-1" %}
     </div>
 </div>
 <div class="caption">
@@ -56,10 +56,10 @@ The board was fully designed from schematic to Gerber in EasyEDA and fabricated 
 
 <div class="row">
     <div class="col-sm-6 mt-3 mt-md-0">
-        {% include figure.liquid loading="eager" path="assets/img/29.png" title="Full Schematic" class="img-fluid rounded z-depth-1" %}
+        {% include figure.liquid loading="eager" path="assets/img/59.png" title="Full Schematic" class="img-fluid rounded z-depth-1" %}
     </div>
     <div class="col-sm-6 mt-3 mt-md-0">
-        {% include figure.liquid loading="eager" path="assets/img/30.png" title="PCB 3D Render - Top View" class="img-fluid rounded z-depth-1" %}
+        {% include figure.liquid loading="eager" path="assets/img/60.png" title="PCB 3D Render - Top View" class="img-fluid rounded z-depth-1" %}
     </div>
 </div>
 <div class="caption">
@@ -79,7 +79,7 @@ The board was fully designed from schematic to Gerber in EasyEDA and fabricated 
 
 <div class="row mt-4">
     <div class="col-sm text-center">
-        {% include figure.liquid loading="eager" path="assets/img/34.png" title="PCB 3D Render - Angle View" class="img-fluid rounded z-depth-1" %}
+        {% include figure.liquid loading="eager" path="assets/img/61.png" title="PCB 3D Render - Angle View" class="img-fluid rounded z-depth-1" %}
     </div>
 </div>
 <div class="caption">
@@ -94,7 +94,7 @@ The firmware (C/C++, ESP-IDF/Arduino core) handles Wi-Fi connectivity, Modbus po
 
 <div class="row">
     <div class="col-sm mt-3 mt-md-0">
-        {% include figure.liquid loading="eager" path="assets/img/32.png" title="Firmware Flowchart" class="img-fluid rounded z-depth-1" %}
+        {% include figure.liquid loading="eager" path="assets/img/62.png" title="Firmware Flowchart" class="img-fluid rounded z-depth-1" %}
     </div>
 </div>
 <div class="caption">
